@@ -23,7 +23,7 @@ bun test --watch
 To build the library:
 
 ```bash
-bash run build
+bun run build
 ```
 
 # Related Resources
