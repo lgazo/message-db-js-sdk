@@ -6,15 +6,34 @@
     "name": "Ladislav Gazo",
     "email": "gazo@seges.sk"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "build": "bun run build.mjs",
+    "prepublishOnly": "bun run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "bun"
+  ],
+  "homepage": "https://github.com/lgazo/message-db-js-sdk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgazo/message-db-js-sdk.git"
+  },
+  "bugs": "https://github.com/lgazo/message-db-js-sdk/issues",
   "devDependencies": {
+    "bun-plugin-dts": "0.2.1",
     "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "5.0.0"
   },
   "dependencies": {
-    "pg-promise": "11.5.4"
+    "postgres": "3.4.3"
   }
 }

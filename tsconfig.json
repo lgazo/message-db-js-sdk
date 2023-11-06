@@ -2,8 +2,9 @@
   "compilerOptions": {
     "lib": ["ESNext"],
     "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "bundler",
+    "target": "es2020",
+    // "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "moduleDetection": "force",
     "allowImportingTsExtensions": true,
     "noEmit": true,
@@ -17,6 +18,11 @@
     "allowJs": true,
     "types": [
       "bun-types" // add Bun global
-    ]
+    ],
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "resolveJsonModule": true
   }
 }
